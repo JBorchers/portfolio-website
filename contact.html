@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jordan Borchers - Portfolio</title>
+    <link
+      rel="icon"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/004/688/original/favicon_v7.png?1612236727"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <img src="img/Signature_small.png" alt="logo" class="page-header__item" />
+      <!--use alt="Persoanl logo for Jordan Borchers" when ready-->
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >My Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div>
+      <h1>Contact</h1>
+      Jordan Borchers<br /><br />
+      2610 S. Everett St<br />
+      Denver, CO<br />
+      United States<br />
+      <br />
+      Tel <a href="tel:720-841-6259">Office: 720-841-6259</a><br />
+      Skype <a href="skype:live:.cid.16a069090006595f"> Jordan Borchers</a
+      ><br />
+      Email
+      <a href="mailto:jordanborchers@gmail.com">jordanborchers@gmail.com</a
+      ><br />
+      <a href="mailto:jordanborchers@gmail.com">Let's get in touch!</a>
+    </div>
+    <form action="/login-form-action" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email" required />
+      <label class="standard-label" for="contact-tel">Telephone: </label>
+      <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+      <label class="standard-label" for="input">Message: </label>
+      <textarea maxlength="240" id="input" required></textarea>
+      <input type="submit" value="Send message" />
+    </form>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <!--Github logo-->
+        <img src="img/iconfinder_github_317712.svg" alt="Github" />
+        <!-- Twitter logo -->
+        <img
+          src="img/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.svg"
+          alt="twitter"
+        />
+        <!-- LinkedIn logo -->
+        <img
+          src="img/iconfinder_1_Linkedin_unofficial_colored_svg_5296501 (1).svg"
+          alt="LinkedIn"
+        />
+      </div>
+    </footer>
+  </body>
+  <script src="js/tota11y.min.js"></script>
+</html>
