@@ -19,7 +19,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 350;
 }
 
 h3 {
@@ -159,9 +159,18 @@ button:focus,
   text-align: center;
 }
 
+.contact-me {
+  padding: 20px 20px 0px 20px;
+}
+
+.project-section {
+  padding: 20px 20px 0px 20px;
+}
 .about-me-list {
   list-style-type: none;
   padding-left: 0%;
+  font-size: 24px;
+  font-weight: 350;
 }
 
 /* start grid fallback */
