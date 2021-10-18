@@ -4,26 +4,31 @@
   --primary-color: #d66d16;
   --secondary-color: #357b70;
   --tertiary-color: #489c79;
-  --background-color: whitesmoke;
+  --background-color: #2b2b2b;
   --primary-text: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --primary-text-color: #3a3a3a;
+  --primary-text-color: whitesmoke;
   --secondary-text-color: white;
 }
 
 /* ------ end variables -------- */
-
 body {
-  background-color: var(--background-color);
-  color: var(--primary-text-color);
+  background-color: #bb9797;
+  background-image: url('../img/backgroundimage.png');
+  color: #2b2b2b;
   font-family: var(--primary-text);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
 }
 
+.page_content {
+  margin: auto;
+  background-color: whitesmoke;
+}
+
 h1 {
-  color: var(--primary-color);
-  font-size: 30px;
+  color: var(--background-color);
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -267,4 +272,14 @@ button:focus,
 
 * {
   box-sizing: border-box;
+}
+
+/* page sections */
+
+.project-section {
+  margin-top: 10px;
+}
+
+section {
+  margin-top: 20px;
 }

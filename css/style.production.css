@@ -3,23 +3,62 @@
 /* ------ end variables -------- */
 
 body {
-  background-color: whitesmoke;
-  color: #3a3a3a;
+  /* background-color: #1b1b1b; */
+  background-color: #1c1e24;
+  /* background-image: url('../img/bg_image3.jpg'); */
+  background-attachment: fixed;
+  color: rgb(155, 155, 155);
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
 }
 
+.page_content {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  background-color: #1d1e23;
+  /* border-radius: 7px; */
+  /* box-shadow: 7px 7px 7px rgb(0, 0, 0); */
+  box-shadow: 0 0 80px 10px rgb(0, 0, 0);
+}
+
+.title {
+  /* color: #1b1b1b; */
+  color: rgb(206, 206, 206);
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 150px;
+  text-align: center;
+  letter-spacing: 5px;
+  /* text-shadow: 2px 2px 7px black; */
+}
+
 h1 {
-  color: #d66d16;
-  font-size: 30px;
-  font-weight: 700;
+  /* color: #16c0d6; */
+  /* color: rgb(177, 177, 177); */
+  /* color: #1b1b1b; */
+  color: rgb(206, 206, 206);
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 5px;
+  text-align: center;
+  letter-spacing: 5px;
+  /* text-shadow: 2px 2px rgb(170, 170, 170); */
 }
 
 h2 {
   font-size: 24px;
   font-weight: 350;
+  text-align: center;
+  letter-spacing: 3px;
 }
 
 h3 {
@@ -32,12 +71,16 @@ footer {
 }
 
 a {
-  color: #357b70;
+  color: #12ccb0;
+  /* color: rgb(255, 83, 106); */
 }
 
-a:visited {
-  /* visited link */
-  color: #357b70;
+.icon {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 25px;
 }
 
 a:hover a:focus {
@@ -63,7 +106,7 @@ button {
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #d66d16;
+  background-color: #12ccb0;
   color: white !important;
   text-decoration: none;
 
@@ -90,7 +133,7 @@ button {
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #d66d16;
+  background-color: #12ccb0;
   color: white !important;
   text-decoration: none;
 
@@ -137,18 +180,37 @@ button:focus,
 }
 
 .profile__portrait {
-  float: left;
-  width: 250px;
+  display: inline-block;
+  width: 180px;
   height: auto;
   margin-right: 40px;
-  border-radius: 50%;
+  margin-top: 40px;
+  /* border-radius: 50%; */
+  filter: drop-shadow(10px 4px #12ccb0);
+}
+
+.image_container {
+  text-align: center;
+}
+
+.icon_container {
+  text-align: center
+}
+
+header {
+  position: fixed;
+  z-index: 99;
 }
 
 .page-header {
+  /* background-color: #1b1b1b; */
+  background-color: #0c0d0f;
   display: flex;
   width: 100%;
-  padding: 20px 20px 0px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 2px 2px solid rgba(0, 0, 0, 0.15);
+  /* position: fixed; */
 }
 
 .page-header__item {
@@ -161,7 +223,7 @@ button:focus,
 }
 
 .profile {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -173,9 +235,9 @@ button:focus,
   padding: 20px 20px 0px;
 }
 
-.project-section {
+/* .project-section {
   padding: 20px 20px 0px;
-}
+} */
 
 .about-me-list {
   list-style-type: none;
