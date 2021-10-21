@@ -13,6 +13,9 @@
   href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@200;300;400&display=swap"
   rel="stylesheet"
   />
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <link
   rel="stylesheet"
   type="text/css"
@@ -22,38 +25,20 @@
   <link rel="stylesheet" type="text/css" href="css/style.production.css" />
 </head>
 <body>
-  <header class="page-header">
-    <img src="img/Signature_small.png" alt="logo" class="page-header__item" />
-    <!--use alt="Persoanl logo for Jordan Borchers" when ready-->
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a
-          href="index.html"
-          role="menuitem"
-          class="navigation-list__item navigation-list__item--active"
-          >Home</a
-          >
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item"
-          >About Me</a
-          >
-        </li>
-        
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item"
-          >Projects</a
-          >
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item"
-          >Contact Jordan</a
-          >
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">Jordan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
+      <a class="nav-item nav-link" href="#about-me">About</a>
+      <a class="nav-item nav-link" href="#">Projects</a>
+      <a class="nav-item nav-link" href="#">Contact</a>
+    </div>
+  </div>
+</nav>
   
   
   
@@ -64,21 +49,21 @@
       <h1 class="title">JORDAN</h1>
       <h2>Welcome to my portfolio!<br> I'm so happy you're here.</h2>
       <div class="image_container">
-      <img
-      src="img/prof_img2.JPG"
-      class="profile__portrait"
-      alt="A photograph of Jordan"
-      />
-      <img
-      src="img/prof_img2.JPG"
-      class="profile__portrait"
-      alt="A photograph of Jordan"
-      />
-      <img
-      src="img/prof_img2.JPG"
-      class="profile__portrait"
-      alt="A photograph of Jordan"
-      />
+        <img
+        src="img/prof_img2.JPG"
+        class="profile__portrait"
+        alt="A photograph of Jordan"
+        />
+        <img
+        src="img/prof_img2.JPG"
+        class="profile__portrait"
+        alt="A photograph of Jordan"
+        />
+        <img
+        src="img/prof_img2.JPG"
+        class="profile__portrait"
+        alt="A photograph of Jordan"
+        />
       </div>
       <!-- <a href="#">Check out some of my code</a> -->
     </div>
@@ -93,16 +78,43 @@
     <div class="about-me">
       <div class="icon_container">
         <img
-      src="img/about.png"
-      class="icon"
-      alt="about icon"
-      />
+        src="img/about.png"
+        class="icon"
+        alt="about icon"
+        />
       </div>
       <h1>ABOUT ME</h1>
-      <h2>
-        In route to find the perfect balance of aesthetic beauty and
-        technological performance
-      </h2>
+      <div class="about-container">
+        <div class="about-paragraph">
+      <p>
+        As an aspiring web developer with a background in visual design and organizational/cross-cultural communications, I can offer a unique understanding of how different businesses and roles work together and interact with a diverse client base. My recent experience in full-stack development has given me a sound understanding of the full development process and has shaped my confidence to understand new programs, processes, and team collaboration with ease.
+      </p>
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Skills</th>
+            <th>Level of Expertise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
       <ul class="about-me-list">
         <li>A designer.</li>
         <li>A developer.</li>
@@ -114,32 +126,7 @@
       download
       >Download my CV</a
       >
-      <table>
-      <thead>
-        <tr>
-          <th>Skills</th>
-          <th>Years of Experience</th>
-          <th>Level of Expertise</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>HTML</td>
-          <td>3</td>
-          <td>Advanced</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>2</td>
-          <td>Intermediate</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>1</td>
-          <td>Beginner</td>
-        </tr>
-      </tbody>
-    </table>
+
     </div>
     
     <!-- ---------END ABOUT SECTION-------- -->
@@ -151,127 +138,220 @@
     <div>
       <section class="project-section">
         <div class="icon_container">
-        <img
-      src="img/code.png"
-      class="icon"
-      alt="code icon"
-      />
-      </div>
+          <img
+          src="img/code.png"
+          class="icon"
+          alt="code icon"
+          />
+        </div>
+        
         <h1>PROJECTS</h1>
-        <div class="grid">
-          <!-- grid items will live here-->
-          <div class="grid__item">
-            <h2>myFlix - React</h2>
-            <p>
-              Internet movie database that allows registered users to browse movies by Title, Genre, Director. Users can update their information and add movies to their list of favorites.
-            </p>
-            <a href="https://borchers-myflix-app.netlify.app/">Live project</a>
-            <a href="https://github.com/JBorchers/myFlix_Client/tree/gh-pages">See project on GitHub</a>
-          </div>
-          <div class="grid__item">
-            <h2>Pokedex</h2>
-            <p>
-              The Pokedex App uses basic HTML, CSS and JavaScript. The app displayes a list of Pokemon buttons--when clicked, a modal shows the Pokemon name, image, and details.
-            </p>
-            <a href="https://jborchers.github.io/simple-js-app2/">Live project</a>
-            <a href="https://github.com/JBorchers/simple-js-app2">See project on GitHub</a>
-          </div>
-          <div class="grid__item">
-            <h2>Lorem ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam.
-            </p>
-            <a href="#">See project on GitHub</a>
-          </div>
-          <div class="grid__item">
-            <h2>Lorem ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam.
-            </p>
-            <a href="#">See project on GitHub</a>
-          </div>
-          <div class="grid__item">
-            <h2>Lorem ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam.
-            </p>
-            <a href="#">See project on GitHub</a>
-          </div>
-          <div class="grid__item">
-            <h2>Lorem ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam.
-            </p>
-            <a href="#">See project on GitHub</a>
+        
+        
+        
+        <div class="container projects" id="projects">
+          <div class="row projects-card">
+            
+            
+            <!-- myFlix Angular -->
+            
+            <div class="col-md-4 mb-4">
+              <div class="card h-80">
+                <div class="card-body">
+                  <h5 class="card-title">myFlix Angular App</h5>
+                  <img src="img/myFlix_Angular_2.PNG" class="card-img-top project-image__card mx-auto d-block"
+                  alt="Image of myFlix project">
+                  <p class="card-text">Angular app that represents the frontend of the restful Movie API. </p>
+                  <a href="https://jborchers.github.io/myFlix-Angular-client/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                  <a href="https://github.com/JBorchers/myFlix-Angular-client" target="_blank" class="btn btn-dark mb-2">Code</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#angularModal">
+                    Details
+                  </button>
+                  
+                  
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- movie api -->
+            
+            <div class="col-md-4 mb-4">
+              <div class="card h-80">
+                <div class="card-body">
+                  <h5 class="card-title">Movie API</h5>
+                  <img src="img/movie_api.PNG" class="card-img-top project-image__card mx-auto d-block"
+                  alt="Image of myFlix project">
+                  <p class="card-text">A REST API that provides data used by the front-end React and Angular myFlix applications</p>
+                  <a href="https://github.com/JBorchers/movie_api" target="_blank" class="btn btn-dark mb-2">Code</a>
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- myFlix React -->
+            
+            <div class="col-md-4 mb-4">
+              <div class="card h-80">
+                <div class="card-body">
+                  <h5 class="card-title">myFlix React App</h5>
+                  <img src="img/myFlix_React_2.PNG" class="card-img-top project-image__card mx-auto d-block"
+                  alt="Image of myFlix project">
+                  <p class="card-text">Client-side single page application built with React</p>
+                  <a href="https://borchers-myflix-app.netlify.app/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                  <a href="https://github.com/JBorchers/myFlix_Client" target="_blank" class="btn btn-dark mb-2">Code</a>
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- Meet app -->
+            
+            <div class="col-md-4 mb-4">
+              <div class="card h-80">
+                <div class="card-body">
+                  <h5 class="card-title">Meet App</h5>
+                  <img src="img/meetapp_3.PNG" class="card-img-top project-image__card mx-auto d-block"
+                  alt="Image of Meet project">
+                  <p class="card-text">A serverless, progressive web application (PWA) built with React</p>
+                  <a href="https://jborchers.github.io/meet/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                  <a href="https://github.com/JBorchers/meet" target="_blank" class="btn btn-dark mb-2">Code</a>
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- Chat app -->
+            
+            <div class="col-md-4 mb-4">
+              <div class="card h-80">
+                <div class="card-body">
+                  <h5 class="card-title">Chat App</h5>
+                  <img src="img/chatapp1.PNG" class="card-img-top project-image__card mx-auto d-block"
+                  alt="Image of Chat App project">
+                  <p class="card-text">Cross platform native app created with React Native and the Expo framework</p>
+                  <a href="https://github.com/JBorchers/chat-app" target="_blank" class="btn btn-dark mb-2">View Demo</a>
+                  <a href="https://github.com/JBorchers/chat-app" target="_blank" class="btn btn-dark mb-2">Code</a>
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- Pokedex -->
+            
+            <div class="col-md-4 mb-4">
+              <div class="card h-80">
+                <div class="card-body">
+                  <h5 class="card-title">Pokedex</h5>
+                  <img src="img/pokedex.PNG" class="card-img-top project-image__card mx-auto d-block"
+                  alt="Image of Meet project">
+                  <p class="card-text">A simple JS app that uses basic HTML, CSS and JavaScript to render data from an existing API</p>
+                  <a href="https://jborchers.github.io/simple-js-app2/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                  <a href="https://github.com/JBorchers/simple-js-app2" target="_blank" class="btn btn-dark mb-2">Code</a>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
-      </section>
-    </div>
-    
-    <!-- ---------END PROJECT SECTION--------- -->
-    
-    
-    <!-- ---------CONTACT SECTION--------- -->
-    
-    <div class="contact-me">
-      <div class="icon_container">
-        <img
-      src="img/about.png"
-      class="icon"
-      alt="about icon"
-      />
-      </div>
-      <h1>CONTACT</h1>
-      <p>
-        Jordan Borchers<br /><br />
-        2610 S. Everett St<br />
-        Denver, CO<br />
-        United States<br />
-        <br />
-        Tel <a href="tel:720-841-6259">Office: 720-841-6259</a><br />
-        Skype <a href="skype:live:.cid.16a069090006595f"> Jordan Borchers</a
-          ><br />
-          Email
-          <a href="mailto:jordanborchers@gmail.com">jordanborchers@gmail.com</a
-            ><br />
-            <a href="mailto:jordanborchers@gmail.com">Let's get in touch!</a>
-          </p>
-          <form action="/login-form-action" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">E-mail: </label>
-            <input type="email" id="contact-email" required />
-            <label class="standard-label" for="contact-tel">Telephone: </label>
-            <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
-            <label class="standard-label" for="input">Message: </label>
-            <textarea maxlength="240" id="input" required></textarea>
-            <input type="submit" value="Send message" />
-          </form>
+        
+        
+        <!-- ---------------Modals--------------- -->
+        
+        
+        <!-- Angular Modal -->
+        <div class="modal fade" id="angularModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalTitle">myFlix Angular App</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal-image">
+                <img src="img/myFlix_Angular_1.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of myFlix project">
+                  </div>
+                <p>Angular app that represents the frontend of a restful API. Internet movie database that allows registered users to browse movies by Title, Genre, Director. Users can change their username, email address and birthday. While browsing the movies collection, users can add movies to their list of favorites. The interface views handle data through previously-defined REST API endpoints (see Movie API in the Project section).</p>
+                <div class="modal-image">
+                <img src="img/myFlix_Angular_2.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of myFlix project">
+                  </div>
+                <p>App Features:</p>
+                  <ul>
+                    <li>App displays a welcome view where users will be able to either log in or register an account.</li>
+                    <li>Once authenticated, the user will be able to view all movies.</li>
+                    <li>Movie cards have options to view the movie synopsis, details about the director, and a description of the movie’s genre.</li>
+                    <li>Users can click the “heart” icon on the movie card, adding it to their list of favorites</li>
+                    <li>Users can view their personal profile, where their list of favorite movies will be displayed</li>
+                    <li>The profile page also allows users to update their information (username, birthday, email), or delete their account</li>
+                  </ul>
+                <p>Technologies Used:</p>
+                <ul>
+                  <li>Angular CLI</li>
+                  <li>Typescript</li>
+                  <li>Node.js</li>
+                  <li>Angular Material</li>
+                  <li>Compodoc</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://jborchers.github.io/myFlix-Angular-client/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                  <a href="https://github.com/JBorchers/myFlix-Angular-client" target="_blank" class="btn btn-dark mb-2">Code</a>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- ---------END CONTACT SECTION--------- -->
-              <footer class="page-footer">
-          <p>Find me on</p>
-          <div class="social-media">
-            <!--Github logo-->
-            <img src="img/iconfinder_github_317712.svg" alt="Github" />
-            <!-- Twitter logo -->
+        
+        <!-- ---------END PROJECT SECTION--------- -->
+        
+        
+        
+        
+        <!-- ---------CONTACT SECTION--------- -->
+        
+        <div class="contact-me">
+          <div class="icon_container">
             <img
-            src="img/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.svg"
-            alt="twitter"
-            />
-            <!-- LinkedIn logo -->
-            <img
-            src="img/iconfinder_1_Linkedin_unofficial_colored_svg_529650.svg"
-            alt="LinkedIn"
+            src="img/computer_icon.png"
+            class="icon"
+            alt="contact icon"
             />
           </div>
-        </div>
-      </footer>
-    </body>
-    </html>
+          <h1>CONTACT</h1>
+          <div class="contact_section">
+            <p>
+              Jordan Borchers<br /><br />
+              11195 W. Wisconsin Ave<br />
+              Lakewood, CO 80232<br />
+              United States<br />
+              <br />
+              Tel <a href="tel:720-841-6259">720-841-6259</a><br />
+              Email <a href="mailto:jordanborchers@gmail.com">jordanborchers@gmail.com</a
+                ><br />
+                <a href="mailto:jordanborchers@gmail.com">Let's get in touch!</a>
+              </p>
+            </div>
+          </div>
+          <!-- ---------END CONTACT SECTION--------- -->
+          <footer class="page-footer">
+            <p>Find me on</p>
+            <div class="social-media">
+              <!--Github logo-->
+              <img src="img/iconfinder_github_317712.svg" alt="Github" />
+              <!-- Twitter logo -->
+              <img
+              src="img/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.svg"
+              alt="twitter"
+              />
+              <!-- LinkedIn logo -->
+              <img
+              src="img/iconfinder_1_Linkedin_unofficial_colored_svg_529650.svg"
+              alt="LinkedIn"
+              />
+            </div>
+          </div>
+        </footer>
+      </body>
+      </html>

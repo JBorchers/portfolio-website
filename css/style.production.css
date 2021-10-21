@@ -4,8 +4,8 @@
 
 body {
   /* background-color: #1b1b1b; */
-  background-color: #1c1e24;
-  /* background-image: url('../img/bg_image3.jpg'); */
+  /* background-color: rgb(155, 155, 155); */
+  background-image: url('../img/bg_trees.jpg');
   background-attachment: fixed;
   color: rgb(155, 155, 155);
   font-family: "Montserrat", sans-serif;
@@ -25,7 +25,17 @@ body {
   background-color: #1d1e23;
   /* border-radius: 7px; */
   /* box-shadow: 7px 7px 7px rgb(0, 0, 0); */
-  box-shadow: 0 0 80px 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px 10px rgb(0, 0, 0);
+}
+
+.about-container {
+  display: inline-block
+}
+
+.about-paragraph {
+  float: left;
+  width: 300px;
+  text-align: left;
 }
 
 .title {
@@ -202,6 +212,20 @@ header {
   z-index: 99;
 }
 
+.navbar {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.nav-item {
+  text-align: right;
+}
+
 .page-header {
   /* background-color: #1b1b1b; */
   background-color: #0c0d0f;
@@ -355,4 +379,8 @@ header {
 
 * {
   box-sizing: border-box;
+}
+
+.modal-image {
+  margin-bottom: 20px;
 }
