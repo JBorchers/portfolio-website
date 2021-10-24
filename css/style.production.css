@@ -263,6 +263,14 @@ header {
   padding: 20px 20px 0px;
 } */
 
+.card {
+  color: #1d1e23;
+}
+
+.modal {
+  color: #1d1e23;
+}
+
 .about-me-list {
   list-style-type: none;
   padding-left: 0%;

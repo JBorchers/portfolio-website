@@ -26,19 +26,19 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand">Jordan</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
-      <a class="nav-item nav-link" href="#about-me">About</a>
-      <a class="nav-item nav-link" href="#">Projects</a>
-      <a class="nav-item nav-link" href="#">Contact</a>
+    <a class="navbar-brand">Jordan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
+        <a class="nav-item nav-link" href="#about-me">About</a>
+        <a class="nav-item nav-link" href="#">Projects</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   
   
   
@@ -86,35 +86,35 @@
       <h1>ABOUT ME</h1>
       <div class="about-container">
         <div class="about-paragraph">
-      <p>
-        As an aspiring web developer with a background in visual design and organizational/cross-cultural communications, I can offer a unique understanding of how different businesses and roles work together and interact with a diverse client base. My recent experience in full-stack development has given me a sound understanding of the full development process and has shaped my confidence to understand new programs, processes, and team collaboration with ease.
-      </p>
+          <p>
+            As an aspiring web developer with a background in visual design and organizational/cross-cultural communications, I can offer a unique understanding of how different businesses and roles work together and interact with a diverse client base. My recent experience in full-stack development has given me a sound understanding of the full development process and has shaped my confidence to understand new programs, processes, and team collaboration with ease.
+          </p>
+        </div>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Skills</th>
+              <th>Level of Expertise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       
-      <table>
-        <thead>
-          <tr>
-            <th>Skills</th>
-            <th>Level of Expertise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Advanced</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Intermediate</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Beginner</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-
       <ul class="about-me-list">
         <li>A designer.</li>
         <li>A developer.</li>
@@ -126,7 +126,7 @@
       download
       >Download my CV</a
       >
-
+      
     </div>
     
     <!-- ---------END ABOUT SECTION-------- -->
@@ -185,6 +185,9 @@
                   alt="Image of myFlix project">
                   <p class="card-text">A REST API that provides data used by the front-end React and Angular myFlix applications</p>
                   <a href="https://github.com/JBorchers/movie_api" target="_blank" class="btn btn-dark mb-2">Code</a>
+                  <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#apiModal">
+                    Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -201,6 +204,9 @@
                   <p class="card-text">Client-side single page application built with React</p>
                   <a href="https://borchers-myflix-app.netlify.app/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
                   <a href="https://github.com/JBorchers/myFlix_Client" target="_blank" class="btn btn-dark mb-2">Code</a>
+                  <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#reactModal">
+                    Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -217,6 +223,9 @@
                   <p class="card-text">A serverless, progressive web application (PWA) built with React</p>
                   <a href="https://jborchers.github.io/meet/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
                   <a href="https://github.com/JBorchers/meet" target="_blank" class="btn btn-dark mb-2">Code</a>
+                  <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#meetModal">
+                    Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -233,6 +242,9 @@
                   <p class="card-text">Cross platform native app created with React Native and the Expo framework</p>
                   <a href="https://github.com/JBorchers/chat-app" target="_blank" class="btn btn-dark mb-2">View Demo</a>
                   <a href="https://github.com/JBorchers/chat-app" target="_blank" class="btn btn-dark mb-2">Code</a>
+                  <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#chatModal">
+                    Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -249,6 +261,9 @@
                   <p class="card-text">A simple JS app that uses basic HTML, CSS and JavaScript to render data from an existing API</p>
                   <a href="https://jborchers.github.io/simple-js-app2/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
                   <a href="https://github.com/JBorchers/simple-js-app2" target="_blank" class="btn btn-dark mb-2">Code</a>
+                  <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#pokedexModal">
+                    Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -261,6 +276,7 @@
         
         
         <!-- Angular Modal -->
+        
         <div class="modal fade" id="angularModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -269,23 +285,27 @@
               </div>
               <div class="modal-body">
                 <div class="modal-image">
-                <img src="img/myFlix_Angular_1.PNG" class="card-img-top project-image__card mx-auto"
+                  <img src="img/myFlix_Angular_1.PNG" class="card-img-top project-image__card mx-auto"
                   alt="Image of myFlix project">
-                  </div>
-                <p>Angular app that represents the frontend of a restful API. Internet movie database that allows registered users to browse movies by Title, Genre, Director. Users can change their username, email address and birthday. While browsing the movies collection, users can add movies to their list of favorites. The interface views handle data through previously-defined REST API endpoints (see Movie API in the Project section).</p>
+                </div>
+                <p>Angular app that represents the frontend of a restful API. This internet movie database allows registered users to browse movies by Title, Genre, Director. Users can change their username, email address and birthday. While browsing the movies collection, users can add movies to their list of favorites. The interface views handle data through previously-defined REST API endpoints (see Movie API in the Project section).</p>
                 <div class="modal-image">
-                <img src="img/myFlix_Angular_2.PNG" class="card-img-top project-image__card mx-auto"
+                  <img src="img/myFlix_Angular_2.PNG" class="card-img-top project-image__card mx-auto"
                   alt="Image of myFlix project">
-                  </div>
+                </div>
                 <p>App Features:</p>
-                  <ul>
-                    <li>App displays a welcome view where users will be able to either log in or register an account.</li>
-                    <li>Once authenticated, the user will be able to view all movies.</li>
-                    <li>Movie cards have options to view the movie synopsis, details about the director, and a description of the movie’s genre.</li>
-                    <li>Users can click the “heart” icon on the movie card, adding it to their list of favorites</li>
-                    <li>Users can view their personal profile, where their list of favorite movies will be displayed</li>
-                    <li>The profile page also allows users to update their information (username, birthday, email), or delete their account</li>
-                  </ul>
+                <ul>
+                  <li>App displays a welcome view where users will be able to either log in or register an account.</li>
+                  <li>Once authenticated, the user will be able to view all movies.</li>
+                  <li>Movie cards have options to view the movie synopsis, details about the director, and a description of the movie’s genre.</li>
+                  <li>Users can click the “heart” icon on the movie card, adding it to their list of favorites</li>
+                  <li>Users can view their personal profile, where their list of favorite movies will be displayed</li>
+                  <li>The profile page also allows users to update their information (username, birthday, email), or delete their account</li>
+                </ul>
+                <div class="modal-image">
+                  <img src="img/myFlix_Angular_3.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of myFlix project">
+                </div>
                 <p>Technologies Used:</p>
                 <ul>
                   <li>Angular CLI</li>
@@ -297,61 +317,298 @@
               </div>
               <div class="modal-footer">
                 <a href="https://jborchers.github.io/myFlix-Angular-client/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
-                  <a href="https://github.com/JBorchers/myFlix-Angular-client" target="_blank" class="btn btn-dark mb-2">Code</a>
+                <a href="https://github.com/JBorchers/myFlix-Angular-client" target="_blank" class="btn btn-dark mb-2">Code</a>
                 <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- ---------END PROJECT SECTION--------- -->
+        
+        <!-- Movie API Modal -->
+        
+        <div class="modal fade" id="apiModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalTitle">myFlix React App</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal-image">
+                  <img src="img/movie_api.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of API project">
+                </div>
+                <p>A REST API that provides data about different movies, like directors, genre, description, data about the directors etc. The app is hosted on Heroku and connects to a MongoDB database. It uses Passport for authorization/authentication, and the endpoints are only accessible if a user is registered and authorized. The REST API will be accessed via commonly used HTTP methods like GET and POST. Similar methods (CRUD) will be used to retrieve data from your database and store that data in a non-relational way.</p>
+                <div class="modal-image">
+                  <img src="img/movie_api2.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of API project">
+                </div>
+                <p>App Features:</p>
+                <ul>
+                  <li>Returns a list of all movies to a user</li>
+                  <li>Returns data (description, genre, director, image URL) about a single movie by title to the user</li>
+                  <li>Returns data about a genre (description) by name/title (e.g., “Comedy”)</li>
+                  <li>Returns data about a director (bio, birth year) by name</li>
+                  <li>Allows new users to register</li>
+                  <li>Allows users to update their user info (username, password, email, date of birth)</li>
+                  <li>Allows users to add a movie to their list of favorites</li>
+                  <li>Allow users to remove a movie from their list of favorites</li>
+                  <li>Allows existing users to deregister</li>
+                </ul>
+                <p>Technologies Used:</p>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Mongoose</li>
+                  <li>Passport</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://github.com/JBorchers/movie_api" target="_blank" class="btn btn-dark mb-2">Code</a>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         
         
+        <!-- myFlix React Modal -->
+        
+        <div class="modal fade" id="reactModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalTitle">myFlix React App</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal-image">
+                  <img src="img/myFlix_React_1.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of myFlix project">
+                </div>
+                <p>This is a single-page, responsive React application that represents the frontend of a restful API, built using the MERN stack (MongoDB, Express, React, and Node.js). This internet movie database allows registered users to browse movies by Title, Genre, Director. Users can change their username, email address and birthday. While browsing the movies collection, users can add movies to their list of favorites. The interface views handle data through previously-defined REST API endpoints (see Movie API in the Project section).</p>
+                <div class="modal-image">
+                  <img src="img/myFlix_React_2.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of myFlix project">
+                </div>
+                <p>App Features:</p>
+                <ul>
+                  <li>App displays a welcome view where users will be able to either log in or register an account.</li>
+                  <li>Once authenticated, the user will be able to view all movies.</li>
+                  <li>Movie cards have options to view the movie details, switching to a single-movie view</li>
+                  <li>The movie view contains the selected movie's details, including a synopsis, genre, and director information</li>
+                  <li>Genre views can be accessed from the movie view, returning data about the genre (name, description, and example movies associated with that selected genre)</li>
+                  <li>Director descriptions can also be accessed from the movie view, returning a new view about the selected director (name, biography, birthyear, and example movies written by that director)</li>
+                  <li>Users can select specific movies to add to their list of favorites or remove favorites. This list is displayed on their profile.</li>
+                  <li>Users can update their information from their profile (username, birthday, email), or delete their account</li>
+                </ul>
+                <div class="modal-image">
+                  <img src="img/myFlix_React_3.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of myFlix project">
+                </div>
+                <p>Technologies Used:</p>
+                <ul>
+                  <li>React library</li>
+                  <li>Parcel (build tool)</li>
+                  <li>React Redux</li>
+                  <li>Bootstrap (UI)</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://borchers-myflix-app.netlify.app/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                <a href="https://github.com/JBorchers/myFlix_Client" target="_blank" class="btn btn-dark mb-2">Code</a>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         
         
-        <!-- ---------CONTACT SECTION--------- -->
+        <!-- Meet App Modal -->
         
-        <div class="contact-me">
-          <div class="icon_container">
+        <div class="modal fade" id="meetModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalTitle">Meet App</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal-image">
+                  <img src="img/meetapp_1.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of meet project">
+                </div>
+                <p>A serverless, progressive web application (PWA) built using React as well as a test-driven development (TDD) technique. This app uses the Google Calendar API to fetch upcoming events and is able to work offline. Data visualization was used to display the popularity of event genres, as well as how many events will take place in a selected city on upcoming days.</p>
+                <p>Tests were written before writing the actual functionality for the app. The TDD approach relied on the repetition of a short development cycle, allowing for immediate feedback.</p>
+                <div class="modal-image">
+                  <img src="img/meetapp_3.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of meet project">
+                </div>
+                <p>App Features:</p>
+                <ul>
+                  <li>Filter events by city.</li>
+                  <li>Show/hide details</li>
+                  <li>Specify a number of events to display</li>
+                  <li>Ability to be used offline</li>
+                  <li>Shortcut to homescreen</li>
+                  <li>Two charts to show the number of upcoming events and popularity of events by genre</li>
+                </ul>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="img/meetapp_5.PNG" class="card-img-top project-image__card mx-auto"
+                    alt="Image of meet project">
+                  </div>
+                  <p>Technologies Used:</p>
+                  <ul>
+                    <li>React</li>
+                    <li>Google Calendar API and OAuth2 authentication flow</li>
+                    <li>AWS lambda (serverless functions for the authorization server)</li>
+                    <li>Axios (to create HTTP requests)</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://jborchers.github.io/meet/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                  <a href="https://github.com/JBorchers/meet" target="_blank" class="btn btn-dark mb-2">Code</a>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Chat App Modal -->
+        
+        <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalTitle">Chat App</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal-image">
+                  <img src="img/chatapp1.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of chat project">
+                </div>
+                <p>A chat app for mobile devices using React Native (a framework for building Android and iOS applications that only requires one codebase). This app provides users with a chat interface with options to share images and their location. This app is optomized for both Android and iOS devices. It was developed using Expo and uses Google Firestore to store chat messages. Messages are able to be read offline, and messages are compatible with a screen reader.</p>
+                <div class="modal-image">
+                  <img src="img/chatapp4.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of chat project">
+                </div>
+                <p>App Features:</p>
+                <ul>
+                  <li>A page where users can enter their name and choose a background color for the chat screen before joining the chat</li>
+                  <li>A page displaying the conversation, as well as an input field and submit button</li>
+                  <li>Along with text messages, users have the option for two additional communication features: sending images and location data</li>
+                  <li>Data gets stored online and offline</li>
+                </ul>
+                <p>Technologies Used:</p>
+                <ul>
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>Google Firestore Database (to store chat messages)</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://github.com/JBorchers/chat-app" target="_blank" class="btn btn-dark mb-2">View Demo</a>
+                <a href="https://github.com/JBorchers/chat-app" target="_blank" class="btn btn-dark mb-2">Code</a>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Pokedex Modal -->
+        
+        <div class="modal fade" id="pokedexModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalTitle">Pokédex</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal-image">
+                  <img src="img/pokedex.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of pokedex project">
+                </div>
+                <p>A JavaScript app built with HTML, CSS, and JavaScript, which uses an external API. Users are able to view a list of Pokémon with the option to open further details upon clicking on a Pokémon name.</p>
+                <div class="modal-image">
+                  <img src="img/pokedex2.PNG" class="card-img-top project-image__card mx-auto"
+                  alt="Image of myFlix project">
+                </div>
+                <p>App Features:</p>
+                <ul>
+                  <li>App loads data from an external API (Pokémon API)</li>
+                  <li>A list of Pokémon items are displayed on the screen</li>
+                  <li>User action (clicking on a list item) shows further details for that item, such as Pokémon image, height, and weight</li>
+                </ul>
+                <p>Technologies Used:</p>
+                <ul>
+                  <li>Pokédmon API</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://jborchers.github.io/simple-js-app2/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                <a href="https://github.com/JBorchers/simple-js-app2" target="_blank" class="btn btn-dark mb-2">Code</a>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- ---------END PROJECT SECTION--------- -->
+      
+      
+      
+      
+      <!-- ---------CONTACT SECTION--------- -->
+      
+      <div class="contact-me">
+        <div class="icon_container">
+          <img
+          src="img/computer_icon.png"
+          class="icon"
+          alt="contact icon"
+          />
+        </div>
+        <h1>CONTACT</h1>
+        <div class="contact_section">
+          <p>
+            Jordan Borchers<br /><br />
+            11195 W. Wisconsin Ave<br />
+            Lakewood, CO 80232<br />
+            United States<br />
+            <br />
+            Tel <a href="tel:720-841-6259">720-841-6259</a><br />
+            Email <a href="mailto:jordanborchers@gmail.com">jordanborchers@gmail.com</a
+              ><br />
+              <a href="mailto:jordanborchers@gmail.com">Let's get in touch!</a>
+            </p>
+          </div>
+        </div>
+        
+        <!-- ---------END CONTACT SECTION--------- -->
+        
+        <footer class="page-footer">
+          <p>Find me on</p>
+          <div class="social-media">
+            <!--Github logo-->
+            <img src="img/iconfinder_github_317712.svg" alt="Github" />
+            <!-- Twitter logo -->
             <img
-            src="img/computer_icon.png"
-            class="icon"
-            alt="contact icon"
+            src="img/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.svg"
+            alt="twitter"
+            />
+            <!-- LinkedIn logo -->
+            <img
+            src="img/iconfinder_1_Linkedin_unofficial_colored_svg_529650.svg"
+            alt="LinkedIn"
             />
           </div>
-          <h1>CONTACT</h1>
-          <div class="contact_section">
-            <p>
-              Jordan Borchers<br /><br />
-              11195 W. Wisconsin Ave<br />
-              Lakewood, CO 80232<br />
-              United States<br />
-              <br />
-              Tel <a href="tel:720-841-6259">720-841-6259</a><br />
-              Email <a href="mailto:jordanborchers@gmail.com">jordanborchers@gmail.com</a
-                ><br />
-                <a href="mailto:jordanborchers@gmail.com">Let's get in touch!</a>
-              </p>
-            </div>
-          </div>
-          <!-- ---------END CONTACT SECTION--------- -->
-          <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-              <!--Github logo-->
-              <img src="img/iconfinder_github_317712.svg" alt="Github" />
-              <!-- Twitter logo -->
-              <img
-              src="img/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.svg"
-              alt="twitter"
-              />
-              <!-- LinkedIn logo -->
-              <img
-              src="img/iconfinder_1_Linkedin_unofficial_colored_svg_529650.svg"
-              alt="LinkedIn"
-              />
-            </div>
-          </div>
-        </footer>
-      </body>
-      </html>
+        </div>
+      </footer>
+    </body>
+    </html>
+    
