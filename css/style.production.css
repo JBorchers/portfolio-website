@@ -38,6 +38,10 @@ body {
   text-align: left;
 }
 
+.skills {
+  margin-top: 20px;
+}
+
 
 .skill-header {
   margin-bottom: 1rem;
@@ -230,6 +234,7 @@ button:focus,
   width: 180px;
   height: auto;
   margin: 40px;
+  margin-bottom: 5px;
   /* border-radius: 50%; */
   filter: drop-shadow(10px 4px #12ccb0);
   justify-content: center;
