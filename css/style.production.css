@@ -127,7 +127,7 @@ p {
 
 footer {
   font-style: italic;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 a {
@@ -285,7 +285,10 @@ header {
   background-color: rgb(0, 0, 0);
 } */
 
-
+.credit {
+  border-top: rgb(206, 206, 206) solid 1.5px;
+  margin-top: 30px;
+}
 
 
 .nav-link__title {
