@@ -27,7 +27,7 @@ body {
   background-color: #1d1e23dc;
   /* border-radius: 7px; */
   /* box-shadow: 7px 7px 7px rgb(0, 0, 0); */
-  box-shadow: 0 0 10px 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.705);
 }
 
 /* .about-container {
@@ -53,8 +53,8 @@ body {
 }
 
 .skills-wrapper {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .item{
@@ -121,8 +121,8 @@ h3 {
 }
 
 p {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 footer {
@@ -269,8 +269,9 @@ header {
   width: 100%;
   padding-bottom: 1px;
   border-bottom: rgb(206, 206, 206) solid 1.5px;
-  background: linear-gradient(#15171a, #2b3035, #212529);
-  /* background-color: #212529fa; */
+  box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.459);
+  /* background: linear-gradient(#15171a, #2b3035, #212529); */
+  background-color: #212529fa;
 }
 
 .navbar-brand {
