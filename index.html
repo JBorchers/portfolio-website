@@ -237,13 +237,17 @@
                             <h5 class="card-title">myFlix Angular App</h5>
                             <img src="img/myFlix_Angular_2.PNG" class="card-img-top project-image__card mx-auto d-block"
                             alt="Image of myFlix project">
+                            <div>
                             <p class="card-text">Angular app that represents the frontend of the restful Movie API. </p>
+                            </div>
+                            <div class="card-bottom">
                             <a href="https://jborchers.github.io/myFlix-Angular-client/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
                             <a href="https://github.com/JBorchers/myFlix-Angular-client" target="_blank" class="btn btn-dark mb-2">Code</a>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#angularModal">
                               Details
                             </button>
+                            </div>
                             
                             
                           </div>
@@ -259,11 +263,15 @@
                             <h5 class="card-title">Movie API</h5>
                             <img src="img/movie_api.PNG" class="card-img-top project-image__card mx-auto d-block"
                             alt="Image of myFlix project">
+                            <div>
                             <p class="card-text">A REST API that provides data used by the front-end React and Angular myFlix applications</p>
+                            </div>
+                            <div class="card-bottom">
                             <a href="https://github.com/JBorchers/movie_api" target="_blank" class="btn btn-dark mb-2">Code</a>
                             <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#apiModal">
                               Details
                             </button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -280,8 +288,11 @@
                             <p class="card-text">Client-side single page application built with React</p>
                             <a href="https://borchers-myflix-app.netlify.app/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
                             <a href="https://github.com/JBorchers/myFlix_Client" target="_blank" class="btn btn-dark mb-2">Code</a>
-                            <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#reactModal">
+                            <!-- <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#reactModal">
                               Details
+                            </button> -->
+                            <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#caseStudy">
+                              Case Study
                             </button>
                           </div>
                         </div>
@@ -461,7 +472,8 @@
                             <img src="img/myFlix_React_1.PNG" class="card-img-top project-image__card mx-auto"
                             alt="Image of myFlix project">
                           </div>
-                          <p>This is a single-page, responsive React application that represents the frontend of a restful API, built using the MERN stack (MongoDB, Express, React, and Node.js). This internet movie database allows registered users to browse movies by Title, Genre, Director. Users can change their username, email address and birthday. While browsing the movies collection, users can add movies to their list of favorites. The interface views handle data through previously-defined REST API endpoints (see Movie API in the Project section).</p>
+                          <p><u>Overview:</u></p>
+                          <p>MyFlix is a single-page, responsive movie application built using the MERN stack (MongoDB, Express, React, and Node.js). This app allows registered users to browse movies by Title, Genre, Director. Users can change their username, email address and birthday. While browsing the movies collection, users can add movies to their list of favorites, as well as remove them.</p>
                           <div class="modal-image">
                             <img src="img/myFlix_React_2.PNG" class="card-img-top project-image__card mx-auto"
                             alt="Image of myFlix project">
@@ -488,6 +500,82 @@
                             <li>React Redux</li>
                             <li>Bootstrap (UI)</li>
                           </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://borchers-myflix-app.netlify.app/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
+                          <a href="https://github.com/JBorchers/myFlix_Client" target="_blank" class="btn btn-dark mb-2">Code</a>
+                          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- myFlix Case Study Modal -->
+                  
+                  <div class="modal fade" id="caseStudy" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="ModalTitle">myFlix React App</h5>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-image">
+                            <img src="img/myFlix_React_1.PNG" class="card-img-top project-image__card mx-auto"
+                            alt="Image of myFlix project">
+                          </div>
+                          <h2><strong>OVERVIEW</strong></h2>
+                          <p>MyFlix is a single-page, responsive movie application built using the MERN stack (MongoDB, Express, React, and Node.js). This app allows registered users to browse movies by Title, Genre, Director. Users can change their username, email address and birthday. While browsing the movies collection, users can add movies to their list of favorites, as well as remove them.</p>
+                          <div class="modal-image">
+                            <img src="img/myFlix_React_2.PNG" class="card-img-top project-image__card mx-auto"
+                            alt="Image of myFlix project">
+                          </div>
+                          <h2><strong>PURPOSE AND CONTEXT</strong></h2>
+                          <p>MyFlix was a personal application that I built as a part of Career Foundry’s full-stack immersion course. This app was used to demonstrate my knowledge of front-end and back-end development, combing skills I acquired in building a server-side, REST API from scratch to a client-side user interface (see “Movie API” in my “Recent Work” section, or check out my code <a href="https://github.com/JBorchers/movie_api" target="_blank">here</a> </p>
+                          <p>Technologies Used:</p>
+                          <ul>
+                            <li>React library</li>
+                            <li>Parcel (build tool)</li>
+                            <li>React Redux</li>
+                            <li>Bootstrap (UI)</li>
+                          </ul>
+                          <!-- <h2><strong>OBJECTIVE</strong></h2>
+                          <p>To practice the essence of full-stack development, the objective is to build an entire application in full, both server-side REST API and client-side user interface, from scratch.</p> -->
+                          <h2><strong>APPROACH: SERVER-SIDE</strong></h2>
+                          <div class="modal-image">
+                            <img src="img/movie_api2.PNG" class="card-img-top project-image__card mx-auto"
+                            alt="Image of myFlix project">
+                          </div>
+                          <p>I created a RESTful API using Node.js and Express, which interacts with MongoDB (a non-relational database). The API can be accessed using HTTP methods like GET, POST, PUSH, and DELETE. I used CRUD (create, read, update, delete) methods to interact with the data stored in the database. These methods will be reflected on the client-side with user interfaces. The data was kept in a database service called Mongo Atlas, where a container-based cloud Platform as a Service (PaaS), Heroku, fetched the data to be deployed and accessed by the cloud. I used Node.js and its framework, Express, to create different routes. I frequently tested endpoints locally and on Heroku using Postman.</p>
+                          <p><a href="https://github.com/JBorchers/movie_api#readme" target="_blank">see API documentation</a></p>
+                          <p>I also included user authentication and authorization code in the form of basic HTTP authentication and JWT authentication. To practice extra security, passwords added by the user were encrypted with a password-hashing function, BCrypt.</p>
+                          <h2><strong>APPROACH: CLIENT-SIDE</strong></h2>
+                          <div class="modal-image">
+                            <img src="img/myflix2.PNG" class="card-img-top project-image__card mx-auto"
+                            alt="Image of myFlix project">
+                          </div>
+                          <p>The MERN stack was completed after building the client-side of the MyFlix application using React (and React Redux)—the R in MERN. Now that there was an established API to work from, I could build the client-side of the application for users to interface with and experience real data and functionalities.</p>
+                          <p>Using React’s component-based architecture approach, different interface views of the app were represented and used accomplish all of the targeted features, including: a “movie” view, where registered users are able to view all movies; a “movie card” view, where users are able to view specific movies and add them to a list of favorites; a “genre” view, where users are able to view a selected genre’s description, as well as other movies in that genre; and so on.</p>
+                          <p>To understand the app in further detail, here is a list of all features:</p>
+                          <ul>
+                            <li>App displays a welcome view where users will be able to either log in or register an account.</li>
+                            <li>Once authenticated, the user will be able to view all movies.</li>
+                            <li>Movie cards have options to view the movie details, switching to a single-movie view</li>
+                            <li>The movie view contains the selected movie's details, including a synopsis, genre, and director information</li>
+                            <li>Genre views can be accessed from the movie view, returning data about the genre (name, description, and example movies associated with that selected genre)</li>
+                            <li>Director descriptions can also be accessed from the movie view, returning a new view about the selected director (name, biography, birthyear, and example movies written by that director)</li>
+                            <li>Users can select specific movies to add to their list of favorites or remove favorites. This list is displayed on their profile.</li>
+                            <li>Users can update their information from their profile (username, birthday, email), or delete their account</li>
+                          </ul>
+                          <h2><strong>CHALLENGES</strong></h2>
+                          <div class="modal-image">
+                            <img src="img/works-doesnt-work2.png" class="card-img-top project-image__card mx-auto"
+                            alt="Image of myFlix project">
+                          </div>
+                          <p>This was the first big project that I completed in Career Foundry’s Full-Stack Immersion course. Ensuring that the server-side that I had previously created was compatible with the user interface I was aiming to complete proved to be a bigger task than I had anticipated. This was also a task that asked for a long list of features that were supposed to be accomplished with little guidance from the course itself. It was intimidating as a new developer who was brand new to React, but I was really encouraged to take the wheel myself and rely on my own problem-solving skills (of course I did have the help of an amazing tutor and mentor for when I was a little too stuck). This was both my favorite and most challenging project. After completing this app, I found that building more applications was far easier and I gained a lot of confidence as a full-stack developer.</p>
+                          <h2><strong>DURATION</strong></h2>
+                          <p>The server side of this application was built in about one month, and the client side in about two months. I spent the most time on this project than I did on any other project in Career Foundry’s course, though I think it is thanks to this project that I was able to complete following projects quicker.</p>
+                          <p>A following project was replicating the MyFlix React application, but using Angular instead. This project took me about half the time I spent with the React app. Though this was a completely different framework, I used my experience with React to understand the relationship between front-end and back-end, as well as the troubleshooting and debugging skills that I acquired to move through the Angular project with additional ease. 
+                          </p>
                         </div>
                         <div class="modal-footer">
                           <a href="https://borchers-myflix-app.netlify.app/" target="_blank" class="btn btn-dark mb-2">Live Project</a>
