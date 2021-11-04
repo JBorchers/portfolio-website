@@ -326,10 +326,10 @@ header {
   display: block;
 }
 
-/* .navbar-nav .nav-link {
-width: 100vw;
+.navbar-nav .nav-link {
+/* width: 100vw; */
 text-align: center;
-} */
+}
 
 .navbarNav {
   color: white;
