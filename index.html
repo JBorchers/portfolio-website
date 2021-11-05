@@ -62,7 +62,7 @@
     <div class="page_content">
       <div class="profile">
         <h1 class="title" id="top">JORDAN</h1>
-        <h2>Welcome to my portfolio!<br> I'm so happy you're here.</h2>
+        <h2><b>Welcome to my portfolio!<br> I'm so happy you're here.</b></h2>
         <div class="image_container">
           <img
           src="img/prof_edit_bandw_crop.jpg"
@@ -99,11 +99,16 @@
             />
           </div>
           <h1>ABOUT ME</h1>
+          <h2><b>creator. developer.<br>[GIT]-it-done-er.</b></h2><br>
           <div class="about-container">
             <span class="about-paragraph">
               <p>
-                As an aspiring web developer with a background in visual design and organizational / cross-cultural communications, I can offer a unique understanding of how different businesses and roles work together and interact with a diverse client base. My recent experience in full-stack development has given me a sound understanding of the full development process and has shaped my confidence to understand new programs, processes, and team collaboration with ease.
+                As an aspiring <b>web developer</b> and <b>web designer</b> with a background in visual design and organizational / cross-cultural communications, I offer a unique understanding of how different businesses and roles work together and interact with a diverse client base. Previously a Communications Coordinator for clients as near as down the street to as far away as Kenya, I recognize that every client has a special identity. My philosophy has always been to understand this well and to deliver products that match their uniqueness.
               </p>
+              <p>I eventually needed a new challenge to express self-driven solutions and expand my creative potential. I began to dabble in code and wed design out of curiosity, and quickly discovered how much I enjoyed it and how easy the material was for me to pick up.</p>
+              <p>Functions? Frameworks? Libraries? Design? Yes please!</p>
+              <p>My recent experience in full-stack development has given me a sound understanding of the full development process and has shaped my confidence to understand new programs, processes, and team collaboration with ease. This, paired with a knack for creative solutions, has prepared me to extend my philosophy of understanding each client’s unique needs. </p>
+              <p>I’ve learned how to build several different types of applications from the ground up, using a variety of languages, libraries, and frameworks. Now, I am ready to take the next step as a developer, looking for a brand-new, professional experience in tech where I can partake in collaborative and attractive web development and design projects.</p>
               <br>
             </span>
             
@@ -113,22 +118,10 @@
           
           
           <section class="skills" id="skills">
-            <h2>... and what I know</h2><br>
+            <h2><b>... and what I know</b></h2><br>
             
             <div class="skills-wrapper">
-              
-              <!-- <div>
-                <img
-                src="https://img.icons8.com/color/48/000000/mongodb.png"
-                class="icon-card"
-                />MongoDB</div>
-                
-                <span>
-                  <img
-                  src="https://img.icons8.com/color/48/000000/mongodb.png"
-                  class="icon-card"
-                  />MongoDB</span> -->
-                  
+                      
                   <img src="img/skills icons/javascript.png"
                   class="icon-card"
                   />
@@ -177,8 +170,28 @@
                   src="img/skills icons/mongodb.png"
                   class="icon-card"
                   />
+
+                  <img src="img/skills icons/postgreesql.png"
+                  class="icon-card"
+                  />
                   
                   <img src="img/skills icons/postman-api.png"
+                  class="icon-card"
+                  />
+
+                  <img src="img/skills icons/wp.png"
+                  class="icon-card"
+                  />
+
+                  <img src="img/skills icons/amazon-web-services.png"
+                  class="icon-card"
+                  />
+
+                  <img src="img/skills icons/agile.png"
+                  class="icon-card"
+                  />
+
+                  <img src="img/skills icons/office.png"
                   class="icon-card"
                   />
                   
@@ -548,14 +561,17 @@
                           </ul>
                           <h2><strong><br>OBJECTIVE</strong></h2>
                           <p>To practice the crux of full-stack development, implementing a server-side REST API and client-side user interface built from scratch.</p>
+
                           <h2><strong><br>APPROACH: SERVER-SIDE</strong></h2>
                           <div class="modal-image">
                             <img src="img/movie_api2.PNG" class="card-img-top project-image__card mx-auto"
                             alt="Image of myFlix project">
                           </div>
-                          <p>I created a RESTful API using Node.js and Express, which interacts with MongoDB (a non-relational database). The API can be accessed using HTTP methods like GET, POST, PUSH, and DELETE. I used CRUD (create, read, update, delete) methods to interact with the data stored in the database. These methods will be reflected on the client-side with user interfaces. The data was kept in a database service called Mongo Atlas, where a container-based cloud Platform as a Service (PaaS), Heroku, fetched the data to be deployed and accessed by the cloud. I used Node.js and its framework, Express, to create different routes. I frequently tested endpoints locally and on Heroku using Postman.</p>
+                          <p>I created a RESTful API using Node.js and Express, which interacts with MongoDB (a non-relational database). MongoDB was the perfect fit for this project as it offers a flexible document schema and code-native data access. It could easily read the JSON objects I wrote for the data to be used, arranged in collections (movies, users) with different sets of fields (movie Title, Genre, Director, etc., vs user’s Username, Password, Birthday), as well as allow me to make changes to the collections with ease.</p>
+                          <p>The API can be accessed using HTTP methods like GET, POST, PUSH, and DELETE. I used CRUD (create, read, update, delete) methods to interact with the data stored in the database. These methods will be reflected on the client-side with user interfaces. The data was kept in a database service called Mongo Atlas, where a container-based cloud Platform as a Service (PaaS), Heroku, fetched the data to be deployed and accessed by the cloud. I used Node.js and its framework, Express, to create different routes. I frequently tested endpoints locally and on Heroku using Postman. Node.js allowed me to use JavaScript for the back-end development, which prepared me to match the back-end functions with the front-end functions I would be writing in the next approach: Client-Side.</p>
                           <p><a href="https://github.com/JBorchers/movie_api#readme" target="_blank">see API documentation</a></p>
                           <p>I also included user authentication and authorization code in the form of basic HTTP authentication and JWT authentication. To practice extra security, passwords added by the user were encrypted with a password-hashing function, BCrypt.</p>
+
                           <h2><strong><br>APPROACH: CLIENT-SIDE</strong></h2>
                           <div class="modal-image">
                             <img src="img/myflix2.PNG" class="card-img-top project-image__card mx-auto"
@@ -563,6 +579,7 @@
                           </div>
                           <p>The MERN stack was completed after building the client-side of the MyFlix application using React (and React Redux)—the R in MERN. Now that there was an established API to work from, I could build the client-side of the application for users to interface with and experience real data and functionalities.</p>
                           <p>Using React’s component-based architecture approach, different interface views of the app were represented and used accomplish all of the targeted features, including: a “movie” view, where registered users are able to view all movies; a “movie card” view, where users are able to view specific movies and add them to a list of favorites; a “genre” view, where users are able to view a selected genre’s description, as well as other movies in that genre; and so on.</p>
+                          <p>The client-side of the application was written using JSX, an extension of JavaScript that uses a markup-like syntax, resembling writing in HTML—ideal for creating React Elements.</p>
                           <p>I was able to implement a Kanban methodology to manage this project and all of its features with a visual representation of my progress. I aimed to complete the least complicated features first (genre view, director view, welcome screen), and more complicated features last. The Profile component was the most time-consuming as it required more CRUD methods than any other component, and thus was the final component that I completed.</p>
                           <div class="modal-image">
                             <img src="img/kanban.png" class="card-img-top project-image__card mx-auto"
@@ -579,13 +596,20 @@
                             <li>Users can select specific movies to add to their list of favorites or remove favorites. This list is displayed on their profile.</li>
                             <li>Users can update their information from their profile (username, birthday, email), or delete their account</li>
                           </ul>
+
                           <h2><strong><br>CHALLENGES</strong></h2>
                           <div class="modal-image">
                             <img src="img/works-doesnt-work2.png" class="card-img-top project-image__card mx-auto"
                             alt="Image of myFlix project">
                           </div>
                           <p>This was the first big project that I completed in Career Foundry’s Full-Stack Immersion course, and my first introduction to React. Ensuring that the server-side that I had previously created was compatible with the user interface I was aiming to complete proved to be a bigger task than I had anticipated.</p>
-                          <p>Some issues arose with the server-side of my app when I was well underway with developing the client-side. I ran into a roadblock with the login component, where anytime I would try to “login” (a function that is supposed to fetch data from the database, recognize valid data, and allow for an authenticated user to access the rest of the app), I would get the dreaded “CORS Policy error”. This error, that I became well acquainted with, does not blatantly tell you what is wrong with your code and requires a bit more investigating. I had to trace back to the beginning and go back into a testing mode, checking that all endpoint functions were working properly and transferring data as expected. Looking at the logs in Heroku (the program I use to host my API), I saw that something was making my app crash. So, back to Postman I went to test my login endpoint with Heroku. No luck. So, I tested it locally. Again, no luck.</p>
+                          <p>Some issues arose with the server-side of my app when I was well underway with developing the client-side. I ran into a roadblock with the login component, where anytime I would try to “login” (a function that is supposed to fetch data from the database, recognize valid data, and allow for an authenticated user to access the rest of the app), I would get the dreaded “CORS Policy error”. This error, that I became well acquainted with, does not blatantly tell you what is wrong with your code and requires a bit more investigating that brought me back to the beginning.</p>
+                          <ul>
+                            <li><b>Checking program logs:</b> I looked at the logs in Heroku, and saw that something was making my app crash.</li>
+                            <li><b>Testing mode:</b> Back in Postman, I had to check that all endpoint functions were working properly and transferring data as expected, testing endpoints locally and on the cloud-based platform. After many “503 Service Unavailable” errors in Postman, I went to the next step.</li>
+                            <li><b>Check actual database:</b> make sure that the HTTP methods (GET, POST, PUT, DELETE), were reaching Mongo Atlas.</li>
+                            <li><b>Findings:</b> no existing data!</li>
+                          </ul>
                           <p>My next thought was to just check my actual database and see what my requests were doing. What I can only assume was a glitch in Mongo Atlas appeared to have deleted all of my collections. Regardless, I found my problem: no existing data. It was a lengthy and tedious process that lacked an easy solution as I did have to recreate all of my collections; however, this experience was able to reinforce in my understanding of how everything works together between the server-side and client-side of applications.</p>
                           <p>This was both my favorite and most challenging project. After completing MyFlix, I found that building more applications (either with React or other libraries/frameworks) was far easier and I gained a lot of confidence as a full-stack developer.</p>
                           <h2><strong><br>DURATION</strong></h2>
@@ -754,7 +778,7 @@
                     />
                   </div>
                   <h1>CONTACT</h1>
-                  <h2>Let's get in touch!</h2>
+                  <h2><b>Let's get in touch!</b></h2>
                   <div class="contact_section">
                     <p><br>
                       Jordan Borchers<br /><br />
