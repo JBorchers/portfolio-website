@@ -8,7 +8,6 @@ body {
   /* background-image: url('../img/bg_image3.jpg'); */
   background-image: url('../img/bg_trees.jpg');
   background-attachment: fixed;
-  background-repeat: no-repeat;
   color: rgb(155, 155, 155);
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -444,7 +443,6 @@ div.card.card-body.about-card {
 
   body {
     background-attachment: initial;
-    background-size: cover;
   }
 }
 
