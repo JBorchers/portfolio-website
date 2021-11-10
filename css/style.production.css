@@ -444,6 +444,7 @@ div.card.card-body.about-card {
 
   body {
     background-attachment: initial;
+    background-size: cover;
   }
 }
 
