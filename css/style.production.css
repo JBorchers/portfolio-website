@@ -440,6 +440,10 @@ div.card.card-body.about-card {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  body {
+    background-attachment: fixed;
+  }
 }
 
 
