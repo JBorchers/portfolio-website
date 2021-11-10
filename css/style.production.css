@@ -123,6 +123,8 @@ h3 {
 p {
   margin-left: 30px;
   margin-right: 30px;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 footer {
@@ -193,7 +195,7 @@ button {
   /* transition: all 150ms ease-in-out; */
 }
 
-.button {
+.button, .read-more {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -351,6 +353,21 @@ text-align: center;
   color: #1d1e23;
 }
 
+div.card.card-body.about-card {
+  text-align: left;
+  color: rgb(155, 155, 155);
+  background: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 0px;
+}
+
+.read-more-p {
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
 .card.h-80 {
   height: 100%;
   position: relative;
@@ -412,6 +429,16 @@ text-align: center;
 
   h1 {
     font-size: 22px;
+  }
+
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  div.card.card-body.about-card {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
