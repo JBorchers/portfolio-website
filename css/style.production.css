@@ -154,6 +154,18 @@ margin-top: 250px;
   text-align: center;
 }
 
+.contact_icon {
+  margin-right: 7px;
+}
+
+.contact_icon_email {
+  margin-right: 5px;
+}
+
+.contact_section {
+  text-align: left;
+}
+
 .about-me {
   margin-top: 250px;
 }
@@ -241,9 +253,9 @@ button:focus,
   display: inline-block;
   width: 180px;
   height: auto;
-  margin: 40px;
-  margin-bottom: 5px;
-  /* border-radius: 50%; */
+  margin: 20px;
+  /* margin-bottom: 40px; */
+  border-radius: 1%;
   filter: drop-shadow(10px 4px #12ccb0);
   justify-content: center;
 }
@@ -431,10 +443,28 @@ div.card.card-body.about-card {
     font-size: 22px;
   }
 
+  h2 {
+    font-size: 22px;
+  }
+
   p {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .contact_icon {
+  margin-right: 5px;
+  width: 10%;
+}
+
+.contact_icon_email {
+  margin-right: 2px;
+  width: 10%;
+}
+
+.contact-me {
+  padding: 0px;
+}
 
   div.card.card-body.about-card {
     margin-left: 10px;
