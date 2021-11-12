@@ -133,7 +133,7 @@ footer {
 }
 
 a {
-  color: #12ccb0;
+  color: #5cd8cc;
   /* color: rgb(255, 83, 106); */
 }
 
@@ -177,7 +177,7 @@ a:hover a:focus {
 
 a:active {
   /* selected link */
-  color: #489c79;
+  color: #5cd8cc;
 }
 
 button {
