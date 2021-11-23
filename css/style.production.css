@@ -81,6 +81,21 @@ body {
   transform: scale(1.25);
 }
 
+.icon-card .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.icon-card:hover .tooltiptext {
+  visibility: visible;
+}
+
 .title {
   /* color: #1b1b1b; */
   color: rgb(206, 206, 206);
@@ -145,12 +160,20 @@ a {
   margin-bottom: 25px;
 }
 
+.activities_icon {
+  width: 200px;
+  height: auto;
+  text-align: center;
+  
+  margin-bottom: 25px;
+}
+
 .project-section {
-margin-top: 250px;
+margin-top: 100px;
 }
 
 .contact-me {
-  margin-top: 250px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -167,7 +190,7 @@ margin-top: 250px;
 }
 
 .about-me {
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 a:hover a:focus {
@@ -251,7 +274,7 @@ button:focus,
 
 .profile__portrait {
   display: inline-block;
-  width: 180px;
+  width: 250px;
   height: auto;
   margin: 20px;
   /* margin-bottom: 40px; */
@@ -266,6 +289,11 @@ button:focus,
 
 .icon_container {
   text-align: center
+}
+
+.activities_container {
+  text-align: center;
+
 }
 
 header {
@@ -490,4 +518,23 @@ div.card.card-body.about-card {
 
 .modal-image {
   margin-bottom: 20px;
+}
+
+
+
+#container_fade
+{
+    height:20px;    
+}
+
+/* #container_fade DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:pink; 
+} */
+
+.hideme
+{
+    opacity:0;
 }
