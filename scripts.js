@@ -2,6 +2,9 @@ $('.nav-link').on('click',function() {
   $('.navbar-collapse').collapse('hide');
 });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 $(function(){  // $(document).ready shorthand
   $('.monster').fadeIn('slow');
